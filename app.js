@@ -1,4 +1,5 @@
 function activateNav() {
+	window.scrollTo(0, 0);
 	burger = document.querySelector('.burger');
 	burger.classList.toggle('active-burger');
 
