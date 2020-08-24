@@ -13,15 +13,15 @@ gsap.to('.nav-bar',{
 	scrollTrigger:{
 		trigger:'.nav-bar',
 		start:'bottom 15%', 
-		end:'bottom 18%',  
+		end:'bottom 15%',  
 		startTrigger:"center center",
-		scrub:1, 
+		toggleActions: 'play none reverse none',  
 	},
 	height:'10vh',
 	backgroundColor:'#5D8E94',
 	color: 'white',
 	ease:'slow',
-	duration:2,
+	duration:.5,
 });
 
 
@@ -31,10 +31,10 @@ gsap.to('.logo-cont',{
 		start:'bottom 15%', 
 		end:'bottom 15%',  
 		startTrigger:"center center",
-		scrub:1,  
+		toggleActions: 'play none reverse none', 
 	},
 	fontSize:'2rem',
-	duration:2,
 	ease:'slow',
+	duration:.5,
 });
 
