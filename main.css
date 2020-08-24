@@ -22,6 +22,7 @@ body{
 	align-items: center;
 	justify-content: space-around;
 	color: white;
+	transition: all .5s;
 }
 .logo-cont{
 	font-size: 3rem;
@@ -83,6 +84,12 @@ body{
 .active-nav{
 	transform: translateX(0);
 }
+.active-nav-bar{
+	height: 18vh !important;
+	background-color: hotpink !important;
+	color: white !important;
+}
+
 
 
 .sect div{

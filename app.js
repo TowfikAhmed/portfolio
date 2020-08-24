@@ -1,10 +1,12 @@
 function activateNav() {
-	window.scrollTo(0, 0);
 	burger = document.querySelector('.burger');
 	burger.classList.toggle('active-burger');
 
-	nav = document.querySelector('.nav-links');
-	nav.classList.toggle('active-nav');
+	navLinks = document.querySelector('.nav-links');
+	navLinks.classList.toggle('active-nav');
+
+	navBar = document.querySelector('.nav-bar');
+	navBar.classList.toggle('active-nav-bar');
 }
 
 
