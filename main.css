@@ -1,16 +1,23 @@
-*{
+*, *::after{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
 body{
-	overflow-x: hidden;
-	font-family: sans-serif;
+	margin-top: 22vh; 
+	
 }
 .nav-bar{
-	position: relative;
+	position: fixed;
+	top: 0;
+	width: 100vw;
 	background-color: hotpink;
-	height: 10vh;
+	height: 18vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -75,4 +82,12 @@ body{
 }
 .active-nav{
 	transform: translateX(0);
+}
+
+
+.sect div{
+	height: 50vh;
+	width: 20vw;
+	background-color: hotpink; 
+	margin: 10px auto;
 }
