@@ -1,4 +1,9 @@
+/*================
+     NAVIGATION
+=================*/
+
 function activateNav() {
+	window.scrollTo(0, 0);
 	burger = document.querySelector('.burger');
 	burger.classList.toggle('active-burger');
 
@@ -8,8 +13,6 @@ function activateNav() {
 	navBar = document.querySelector('.nav-bar');
 	navBar.classList.toggle('active-nav-bar');
 }
-
-
 
 gsap.to('.nav-bar',{
 	scrollTrigger:{
@@ -40,3 +43,4 @@ gsap.to('.logo-cont',{
 	duration:.5,
 });
 
+/*------------navigation ends------------*/

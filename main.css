@@ -10,8 +10,11 @@ html {
 }
 body{
 	margin-top: 22vh; 
-	
 }
+
+/*================
+     NAVIGATION
+=================*/
 .nav-bar{
 	position: fixed;
 	top: 0;
@@ -21,8 +24,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	color: white;
-	transition: all .5s;
+	color: white; 
 }
 .logo-cont{
 	font-size: 3rem;
@@ -63,7 +65,7 @@ body{
 	.nav-links{
 		flex-direction: column;
 		position: absolute;
-		height: 90vh;
+		height: 82vh;
 		top: 18vh;
 		right: 0;
 		background-color: hotpink;
@@ -89,7 +91,7 @@ body{
 	background-color: hotpink !important;
 	color: white !important;
 }
-
+/*------------navigation ends------------*/
 
 
 .sect div{
