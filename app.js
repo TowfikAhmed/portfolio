@@ -17,15 +17,15 @@ function activateNav() {
 gsap.to('.nav-bar',{
 	scrollTrigger:{
 		trigger:'.nav-bar',
-		start:'bottom 15%', 
-		end:'bottom 15%',  
+		start:'bottom 16%', 
+		end:'bottom 16%',  
 		startTrigger:"center center",
-		toggleActions: 'play none reverse none',  
+		toggleActions: 'play none reverse none',
 	},
 	height:'10vh',
-	backgroundColor:'#5D8E94',
-	color: 'white',
-	ease:'slow',
+	backgroundColor:'#f4f7f6',
+	boxShadow: '1px 0px 5px rgba(0,0,0,.2)',
+	ease:'back',
 	duration:.5,
 });
 
@@ -33,14 +33,39 @@ gsap.to('.nav-bar',{
 gsap.to('.logo-cont',{
 	scrollTrigger:{
 		trigger:'.nav-bar',
-		start:'bottom 15%', 
-		end:'bottom 15%',  
+		start:'bottom 16%', 
+		end:'bottom 16%',  
 		startTrigger:"center center",
 		toggleActions: 'play none reverse none', 
 	},
 	fontSize:'2rem',
-	ease:'slow',
+	ease:'back',
 	duration:.5,
 });
 
 /*------------navigation ends------------*/
+
+const tl = gsap.timeline({repeat:-1, repeatDelay:0});
+tl.to("#quote", {
+	duration: 2, 
+	delay:1,
+	text:"Web Developer",  
+})
+.to("#quote", {
+	duration: 2, 
+	delay:1,
+	text:"Web Animator", 
+})
+.to("#quote", {
+	duration: 2, 
+	delay:1,
+	text:"US/UI Designer", 
+})
+.to("#quote", {
+	duration: 2, 
+	delay:1,
+	text:"Web Designer", 
+});
+
+
+ 
