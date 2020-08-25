@@ -152,16 +152,22 @@ body{
      Responsive
 =================*/
 @media screen and (max-width: 1000px){
-	.logo-cont, .presentation h1{
-		font-size: 2.8rem;
+	.logo-cont{
+		font-size: 2rem;
+	}
+	.presentation h1{
+		font-size: 3rem;
 	}
 }
 @media screen and (max-width: 768px){
 	.nav-bar{
 		justify-content: space-around;
 	}
-	.logo-cont, .presentation h1{
-		font-size: 2.5rem;
+	.logo-cont{
+		font-size: 2rem;
+	}
+	.presentation h1{
+		font-size: 3rem;
 	}
 	.burger{
 		display: block;
