@@ -16,9 +16,9 @@ function activateNav() {
 
 gsap.to('.nav-bar',{
 	scrollTrigger:{
-		trigger:'.nav-bar',
-		start:'bottom 16%', 
-		end:'bottom 16%',  
+		trigger:'.presentation',
+		start:'18% 16%', 
+		end:'18% 16%',  
 		startTrigger:"center center",
 		toggleActions: 'play none reverse none',
 	},
@@ -30,18 +30,18 @@ gsap.to('.nav-bar',{
 });
 
 
-gsap.to('.logo-cont',{
-	scrollTrigger:{
-		trigger:'.nav-bar',
-		start:'bottom 16%', 
-		end:'bottom 16%',  
-		startTrigger:"center center",
-		toggleActions: 'play none reverse none', 
-	},
-	fontSize:'2rem',
-	ease:'back',
-	duration:.5,
-});
+// gsap.to('.logo-cont',{
+// 	scrollTrigger:{
+// 		trigger:'.nav-bar',
+// 		start:'bottom 16%', 
+// 		end:'bottom 16%',  
+// 		startTrigger:"center center",
+// 		toggleActions: 'play none reverse none', 
+// 	},
+// 	fontSize:'2rem',
+// 	ease:'back',
+// 	duration:.5,
+// });
 
 /*------------navigation ends------------*/
 
