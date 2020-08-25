@@ -89,17 +89,19 @@ body{
 	position: relative;
 	font-weight: 500;
 	color: #A67878;
+	text-align: center;
 	z-index: 2;
 }
-.presentation h2{
+.presentation h3{
 	position: relative;
-	margin: 5vh;
+	margin: 3vh;
+	text-align: center;
 	z-index: 2;
 }
 .cta-quote{
 	margin: 3rem;
-	padding: 1.5rem;
-	font-size: 1.5rem;
+	padding: 1.2rem;
+	font-size: 1.2rem;
 	background: transparent;
 	position: relative;
 	z-index: 2;
