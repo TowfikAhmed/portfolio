@@ -1,5 +1,5 @@
 /*================
-     NAVIGATION
+     NAVbar animation
 =================*/
 
 function activateNav() {
@@ -12,7 +12,7 @@ function activateNav() {
 
 	navBar = document.querySelector('.nav-bar');
 	navBar.classList.toggle('active-nav-bar');
-}
+};
 
 gsap.to('.nav-bar',{
 	scrollTrigger:{
@@ -24,26 +24,63 @@ gsap.to('.nav-bar',{
 	},
 	height:'10vh',
 	backgroundColor:'#f4f7f6',
-	boxShadow: '1px 0px 5px rgba(0,0,0,.2)',
+	boxShadow: '3px 0px 5px rgba(0,0,0,.2)',
 	ease:'back',
 	duration:.5,
 });
 
+gsap.to('.logo-cont',{
+	scrollTrigger:{
+		trigger:'.presentation',
+		start:'18% 16%', 
+		end:'18% 16%',  
+		startTrigger:"center center",
+		toggleActions: 'play none reverse none',
+	},
+	fontSize:'2rem',
+	ease:'back',
+	duration:.5,
+});
+gsap.to('.navs',{
+	scrollTrigger:{
+		trigger:'.presentation',
+		start:'18% 16%', 
+		end:'18% 16%',  
+		startTrigger:"center center",
+		toggleActions: 'play none reverse none',
+	},
+	borderBottom:'none'
+});
 
-// gsap.to('.logo-cont',{
-// 	scrollTrigger:{
-// 		trigger:'.nav-bar',
-// 		start:'bottom 16%', 
-// 		end:'bottom 16%',  
-// 		startTrigger:"center center",
-// 		toggleActions: 'play none reverse none', 
-// 	},
-// 	fontSize:'2rem',
-// 	ease:'back',
-// 	duration:.5,
-// });
+/*================
+     NAVbar toogle links section
+=================*/
+gsap.to('.home-link',{
+	scrollTrigger:{
+		trigger:'#home',
+		start:'top center', 
+		end:'bottom center',  
+		startTrigger:"center center",
+		toggleActions: 'restart reverse restart reverse', 
+	},
+	backgroundColor: 'rgba(239, 63, 61, 1)',
+	color: 'white',
+});
+gsap.to('.about-link',{
+	scrollTrigger:{
+		trigger:'#about', 
+		start:'top center', 
+		end:'bottom center',  
+		toggleActions: 'restart reverse restart reverse',
+		markers:true,
+	},
+	backgroundColor: 'rgba(239, 63, 61, 1)',
+	color: 'white',
+});
 
-/*------------navigation ends------------*/
+
+
+
 
 const tl = gsap.timeline({repeat:-1, repeatDelay:0});
 tl.to("#quote", {

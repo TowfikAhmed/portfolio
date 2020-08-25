@@ -7,10 +7,11 @@ html {
   height: 100%;
   width: 100%;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 body{
 	background-color: #f4f7f6;
-	color: #574949; 
+	color: #4D280F; 
 }
 
 /*================
@@ -35,27 +36,36 @@ body{
 	color: rgba(239, 63, 61, 1);
 }
 .navs{
+	width: 30vw;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	list-style: none;
+	list-style: none; 
 }
-.navs{
-	width: 30vw; 
-	justify-content: space-evenly;
+.navs a{
+	text-decoration: none;
+	color: #4D280F;
+	padding: 10px;
+	cursor: pointer;
 }
 .navs li{
+	text-align: center;
 	font-weight: bold;
-	cursor: pointer;
 	transition: transform .5s ease-in;
 }
-.navs li:hover{
-	border-bottom: 3px solid rgba(239, 63, 61, 1);
-}
-.nav-links{  
-	width: 0;
-	opacity: 0;
-	cursor: none;
+.nav-links{ 
+	z-index: -100;
+	cursor: pointer;
+	width: 50vw;
+	flex-direction: column;
+	position: absolute;
+	height: 82vh;
+	top: 18vh;
+	right: 0;
+	background-color: #f4f7f6;
+	justify-content: space-around;
+	align-items: center;
+	transform: translateX(50vw);
 	transition: transform .5s ease-in;
 }
 .burger{
@@ -90,9 +100,13 @@ body{
 	font-weight: 500;
 	color: #A67878;
 	text-align: center;
+	background: linear-gradient(#D59595,#855050);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	z-index: 2;
 }
 .presentation h3{
+	font-weight: 200;
 	position: relative;
 	margin: 3vh;
 	text-align: center;
@@ -179,16 +193,6 @@ body{
 	}
 	.nav-links{ 
 		opacity: 1;
-		cursor: pointer;
-		width: 50vw;
-		flex-direction: column;
-		position: absolute;
-		height: 82vh;
-		top: 18vh;
-		right: 0;
-		background-color: #f4f7f6;
-		justify-content: space-around;
-		align-items: center;
 		transform: translateX(50vw);
 	}
 }
@@ -212,9 +216,6 @@ body{
 	height: 18vh !important;    /*to override gsap css*/
 	background-color: #f4f7f6 !important;
 	color: black !important;
-}
-.active-link{
-	border-bottom: 3px solid rgba(239, 63, 61, 1);
 }
 
 
